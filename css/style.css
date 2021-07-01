@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-color: black;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: calc(100% - 80px);
+    /* border: solid 1px brown; */
+}
+
+nav #box-logo {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 5%;
+}
+
+nav #logo {
+    vertical-align: middle;
+    width: 60%;
+}
+
+nav ul li {
+    padding: 3.5% 8%;
+    color: rgb(148, 148, 148);
+    font-size: 82%;
+    font-weight: 600;
+    list-style: none;
+}
+
+main nav #home {
+    border-left: 2px solid palegreen;
+    color: white;
+}
+
+nav ul li:hover {
+    color: white;
+    cursor:pointer;
+}
+
+nav ul li img {
+    width: 11%;
+    vertical-align: middle;
+}
+
+nav .playlist {
+    padding-top: 8%;
+}
+
+nav .playlist ul li h5 {
+    font-size: 100%;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav i {
+    color: black;
+    background-color: rgb(148, 148, 148);
+    padding: 3.5%;
+}
+

@@ -4,20 +4,27 @@
     box-sizing: border-box;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .container {
-    display: flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100vw;
     height: calc(100vh - 80px);
     background-color: black;
 }
 
+/* Nav */
 .nav-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 15%;
     height: calc(100% - 80px);
+    background-color: black;
     /* border: solid 1px brown; */
 }
 
@@ -59,15 +66,68 @@ nav .playlist {
     padding-top: 8%;
 }
 
+nav .playlist h5 {
+    color: white;
+    padding: 3.5% 8%;
+}
+
 nav .playlist ul li h5 {
     font-size: 100%;
     color: white;
     text-transform: uppercase;
 }
 
-nav i {
+nav .playlist i {
     color: black;
     background-color: rgb(148, 148, 148);
     padding: 3.5%;
 }
 
+.install-app {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+}
+
+.install-app ul li:hover {
+    color: rgb(148, 148, 148);
+    cursor: text;
+}
+
+.install-app ul li span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.install-app ul li i {
+    padding-right: 2%;
+}
+
+.install-app ul li hr {
+    color: rgb(148, 148, 148);
+    cursor: text;
+}
+
+.install-app ul li img {
+    background-color: rgb(148, 148, 148);
+    border-radius: 50%;
+}
+
+.install-app ul li:last-child:hover {
+    cursor: text;
+    color: rgb(148, 148, 148);
+}
+/* Fine nav */
+
+/* Jumbotron */
+.jumbotron {
+    margin-left: 15%;
+    width: 85%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(80, 96, 116, 0.459);
+    /* color: rgb(148, 148, 148) */
+}
+
+.jumbotron 

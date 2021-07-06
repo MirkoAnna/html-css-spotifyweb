@@ -137,8 +137,9 @@ nav .playlist i {
 }
 
 .jumbotron-nav ul {
-    width: 52%;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 .jumbotron-nav ul li hr {
@@ -170,7 +171,6 @@ nav .playlist i {
 
 .jumbotron-wrapper {
     padding: 0 12px;
-    height: 55%;
 }
 
 .jumbotron-content {
@@ -187,13 +187,9 @@ nav .playlist i {
     align-items: center;
     width: calc(100% / 6);
     margin-right: 10px;
-    height: 100px;
+    height: 270px;
     text-align: center;
     opacity: 1;
-}
-
-.jumbotron-content .box-img:hover {
-    /* opacity: 0.2; */
 }
 
 .jumbotron-content .box-img .hover-play {
@@ -207,7 +203,12 @@ nav .playlist i {
     transition: .2s ease;
     background-color: rgba(0,0,0,0.8);
     width: 100%;
-    height: 141%;
+    height: 62.7%;
+    overflow: hidden;
+}
+
+.jumbotron-content .box-img > div:hover {
+    opacity: 0.2;
 }
 
 .icon {
@@ -230,10 +231,6 @@ nav .playlist i {
     display: block;
     height: auto;
 }
-
-/* .jumbotron .jumbotron-content .box-img img:hover {
-    opacity: 0.2;
-} */
 
 .jumbotron .jumbotron-content .box-img:hover .hover-play {
     opacity: 1;
@@ -260,19 +257,21 @@ nav .playlist i {
     font-size: 59%;
 }
 
-.jumbotron.wrapper2 {
-    display: flex;
-    margin-top: 50px;
+.rounded-image {
+    border-radius: 50%;
 }
 
-.jumbotron-content2 {
-    display: flex;
+.più-ascolti p {
+    color: rgb(148, 148, 148);
+    font-size: 70%;
+    padding-bottom: 3%;
 }
 
-.jumbotron-wrapper2 .subtitle {
-    /* padding-top: 10%; */
+.rounded-image .hover-play {
+    /* border-radius: 50%; */
+    overflow: hidden;
+    border-radius: 50%;
 }
-
 
 /* Footer */
 footer {
@@ -480,11 +479,27 @@ footer .footer-right #line2 #white-line2 #hover-circle2 #hidden-line2 {
 
 
 
+/* Media query */
+@media  screen and (max-width: 789px) {
+    .jumbotron-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .jumbotron-content .box-img {
+        width: 23%;
+    }
+}
 
-
-
-/* @media  screen and (max-width: 600px) {
+@media  screen and (max-width: 374px) {
     .nav-container {
         width: 50px;
+        }
+    
+    .jumbotron-content {
+        display: flex;
+        flex-wrap: wrap;
     }
-} */
+    .jumbotron-content .box-img {
+        width: 43%;
+    }
+}
